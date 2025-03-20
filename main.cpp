@@ -1,14 +1,4 @@
-#include <iostream>
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
-#include <stb/stb_image.h>
-#include "shaderClass.h"
-#include "VAO.h"
-#include "VBO.h"
-#include "EBO.h"
-#include"Texture.h"
-using namespace std;
-
+#include "allInclude.h"
 
 int WIDTH=720, HEIGHT=720;
 
@@ -58,8 +48,6 @@ int main() {
 #pragma endregion
 
 	Shader shaderProgram("default.vert", "default.frag");
-
-
 
 	// Generates Vertex Array Object and binds it
 	VAO VAO1;
